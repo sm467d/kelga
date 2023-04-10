@@ -1,21 +1,19 @@
 package conversions;
 
-import java.util.Scanner;
-
 public class Kelga {
     // Method that converts mpg to km/l
-    public static double mpgToKml(double mpg){
-        double kml = mpg * 0.425143707;
-        return kml;
+    public static double mpgToKpl(double mpg){
+        double kpl = mpg * 0.425143707;
+        return kpl;
     }
 
     // Method that converts km/l to mpg
-    public static double kmlToMpg(double kml){
-        double mpg = kml / 0.425143707;
+    public static double kplToMpg(double kpl){
+        double mpg = kpl / 0.425143707;
         return mpg;
     }
 
-    // Methods that converts Kelvin to Celsius
+    // Method that converts Kelvin to Celsius
     public static double kelvinToCelsius(double kelvin){
         double celsius = kelvin - 273.15;
         return celsius;
