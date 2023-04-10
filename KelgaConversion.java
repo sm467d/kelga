@@ -15,20 +15,20 @@ public class KelgaConversion {
 
         if (option == 1){
             System.out.println("Please select an option: ");
-            System.out.println("(1) Convert mpg to km/l");
-            System.out.println("(2) Convert km/l to mpg\n");
+            System.out.println("(1) Convert mpg to kpl");
+            System.out.println("(2) Convert kpl to mpg\n");
             int option1 = input.nextInt();
             if (option1 == 1){
                 System.out.println("Please enter the value in mpg: ");
                 double mpg = input.nextDouble();
-                double kml = kelga.mpgToKml(mpg);
-                System.out.println(mpg + " mpg is equal to " + kml + " km/l");
+                double kpl = kelga.mpgToKpl(mpg);
+                System.out.println(mpg + " mpg is equal to " + kpl + " kpl");
             }
             else if (option1 == 2){
-                System.out.println("Please enter the value in km/l: ");
-                double kml = input.nextDouble();
-                double mpg = kelga.kmlToMpg(kml);
-                System.out.println(kml + " km/l is equal to " + mpg + " mpg");
+                System.out.println("Please enter the value in kpl: ");
+                double kpl = input.nextDouble();
+                double mpg = kelga.kplToMpg(kpl);
+                System.out.println(kpl + " kpl is equal to " + mpg + " mpg");
             }
             else{
                 System.out.println("Invalid option!");
@@ -63,6 +63,6 @@ public class KelgaConversion {
         }
 
         System.out.println("Thank you for using Kelga!");
-        
+
     }
 }
